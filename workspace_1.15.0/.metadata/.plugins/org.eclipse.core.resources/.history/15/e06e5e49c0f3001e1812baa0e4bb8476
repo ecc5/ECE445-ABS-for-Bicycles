@@ -99,6 +99,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 	}
 }
 
+
 //This function should get called when delta_t becomes very large (give it a tolerance)
 //something like 2-3 secs, also GetTick is updated every 1ms, so it should be in units of ms.
 void ForceBrakesOn() {
@@ -152,6 +153,12 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+
+	  //First get some way of reading the sensor input (requires a rising edge interrupt)
+	  //also needs to find some way to get the difference between rising edges
+	  //(maybe increment a counter every certain cpu cycles?) [might have error due to overflow]
+	  //definitely make the counter reset after every rising edge event finishes
+
 	  //Still need to measure the magnets to get a good rad measurement
 
 	  //later, make the signals send into the generated matlab code

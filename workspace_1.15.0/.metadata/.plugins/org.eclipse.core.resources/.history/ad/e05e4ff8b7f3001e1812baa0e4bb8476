@@ -44,8 +44,6 @@
 /* Private variables ---------------------------------------------------------*/
 
 /* USER CODE BEGIN PV */
-
-//Velocity Sensing variables
 float wheel_speed = 0;
 float vehicle_speed = 0;
 
@@ -57,10 +55,6 @@ float delta_t2 = 1;
 float rad = 0.2618; //(Guess) This will, of course, need to get set later once measured
 
 float IIR_alpha = 0.5; //Get rid of the reentrant IIR if you need more tuning
-
-//Controller variables
-float slp_rto = 0.2; //Shouldn't be used just yet, but will for differential braking
-int controller_out = 0; //collection variable for the simulink model output
 
 /* USER CODE END PV */
 
@@ -75,36 +69,36 @@ static void MX_GPIO_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-//First-Order IIR Filter (for velocity filtering)
+//First-Order IIR Filter
 float IIR(float input, float old) {
-	return (1-IIR_alpha)*old + IIR_alpha*input;
-}
-
-//Timing Function
-void delta(float* delta_t, float* t) {
-	float temp_t = HAL_GetTick();
-	*delta_t = temp_t - t;
-	*t = temp_t;
+	return (1-IIR_alpha)*old + input;
 }
 
 void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
-	if (GPIO_Pin & (1<<2)) {
-		delta(&delta_t1,&t1);
+	if (GPIO_Pin & (1<<12)) {
+//		delta_t1 = HAL_GetTick() - delta_t1;
+		float temp_t = HAL_GetTick();
+		delta_t1 = temp_t - t1;
+		t1 = temp_t;
+
 		wheel_speed = IIR(rad/delta_t1,wheel_speed);
 	}
 
-	if (GPIO_Pin & (1<<3)) {
-		delta(&delta_t2,&t2);
+	if (GPIO_Pin & (1<<13)) {
+		float temp_t = HAL_GetTick();
+		delta_t2 = temp_t - t2;
+		t2 = temp_t;
+
 		vehicle_speed = IIR(rad/delta_t2,vehicle_speed);
 	}
 }
+
 
 //This function should get called when delta_t becomes very large (give it a tolerance)
 //something like 2-3 secs, also GetTick is updated every 1ms, so it should be in units of ms.
 void ForceBrakesOn() {
 	//make this function set the brake variable to high
 	//so that the brakes will just be hard turned on
-	controller_out = 1;
 }
 
 /* USER CODE END 0 */
@@ -152,7 +146,18 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-	  //Still need to measure the magnets to get a good rad measurement
+	  //Also, you need to define the clock in the ioc.
+
+	  //First get some way of reading the sensor input (requires a rising edge interrupt)
+	  //also needs to find some way to get the difference between rising edges
+	  //(maybe increment a counter every certain cpu cycles?) [might have error due to overflow]
+	  //definitely make the counter reset after every rising edge event finishes
+
+	  //Still need to define some way of getting the sensor input, but for now,
+	  //Just know that you want some rad/delta_t as a way of finding immediate velocity
+	  //Then send those into the filter like so vvv
+	  wheel_speed = IIR(rad/delta_t1,wheel_speed);
+	  vehicle_speed = IIR(rad/delta_t2,vehicle_speed);
 
 	  //later, make the signals send into the generated matlab code
 	  //(figure out the best way to implement the interfacing between here and MATLAB stuff)
@@ -183,14 +188,10 @@ void SystemClock_Config(void)
   /** Initializes the RCC Oscillators according to the specified parameters
   * in the RCC_OscInitTypeDef structure.
   */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSE;
-  RCC_OscInitStruct.HSEState = RCC_HSE_ON;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSE;
-  RCC_OscInitStruct.PLL.PLLM = 6;
-  RCC_OscInitStruct.PLL.PLLN = 84;
-  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLQ = 4;
+  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
+  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
+  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
+  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_NONE;
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -200,12 +201,12 @@ void SystemClock_Config(void)
   */
   RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
                               |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
+  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_HSI;
   RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV2;
+  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
   RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
 
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
+  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_0) != HAL_OK)
   {
     Error_Handler();
   }
@@ -223,21 +224,20 @@ static void MX_GPIO_Init(void)
 /* USER CODE END MX_GPIO_Init_1 */
 
   /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOH_CLK_ENABLE();
-  __HAL_RCC_GPIOA_CLK_ENABLE();
+  __HAL_RCC_GPIOC_CLK_ENABLE();
 
-  /*Configure GPIO pins : PA2 PA3 */
-  GPIO_InitStruct.Pin = GPIO_PIN_2|GPIO_PIN_3;
+  /*Configure GPIO pins : PC1 PC2 */
+  GPIO_InitStruct.Pin = GPIO_PIN_1|GPIO_PIN_2;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
-  GPIO_InitStruct.Pull = GPIO_NOPULL;
-  HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
+  GPIO_InitStruct.Pull = GPIO_PULLDOWN;
+  HAL_GPIO_Init(GPIOC, &GPIO_InitStruct);
 
   /* EXTI interrupt init*/
+  HAL_NVIC_SetPriority(EXTI1_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(EXTI1_IRQn);
+
   HAL_NVIC_SetPriority(EXTI2_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI2_IRQn);
-
-  HAL_NVIC_SetPriority(EXTI3_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(EXTI3_IRQn);
 
 /* USER CODE BEGIN MX_GPIO_Init_2 */
 /* USER CODE END MX_GPIO_Init_2 */
