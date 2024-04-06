@@ -1,0 +1,35 @@
+2024-04-05 17:57:42,973 [INFO] Gpio:277 - dependency for GPIO []
+2024-04-05 18:09:46,663 [INFO] Gpio:277 - dependency for GPIO []
+2024-04-05 18:09:46,686 [INFO] NvicIntPanel:101 - NVIC parent = com.st.microxplorer.plugins.ip.nvic.MultiNvicIntPanel[,0,0,0x0,invalid,layout=javax.swing.BoxLayout,alignmentX=0.0,alignmentY=0.0,border=,flags=9,maximumSize=,minimumSize=,preferredSize=]
+2024-04-05 18:19:11,585 [INFO] Gpio:277 - dependency for GPIO []
+2024-04-05 18:42:32,263 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 577492728 Bytes (901775360)
+2024-04-05 18:42:32,329 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 593114128 Bytes (901775360)
+2024-04-05 18:42:38,806 [INFO] UtilMem:75 - End SaveConfig() Used Memory: 669767416 Bytes (901775360)
+2024-04-05 18:42:38,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: NVIC
+2024-04-05 18:42:38,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: GPIO
+2024-04-05 18:42:38,899 [INFO] BlockDiagram:2759 - set Specific Code input for plugin: RCC
+2024-04-05 18:42:38,900 [INFO] CodeGenerator:807 - code generatio: config db path: C:\ST\STM32CubeIDE_1.15.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.11.0.202403141607\\db\
+2024-04-05 18:42:39,017 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\MXTmpFiles\license.tmp_save
+2024-04-05 18:42:39,155 [INFO] CodeEngine:279 - Generated code: C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\MXTmpFiles\license.tmp
+2024-04-05 18:42:39,221 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\MXTmpFiles\gpio.tmp_save
+2024-04-05 18:42:39,335 [INFO] CodeEngine:279 - Generated code: C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\MXTmpFiles\gpio.tmp
+2024-04-05 18:42:39,368 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\Core\Src\stm32f4xx_it.c_save
+2024-04-05 18:42:39,595 [INFO] CodeEngine:279 - Generated code: C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\Core\Src\stm32f4xx_it.c
+2024-04-05 18:42:39,617 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\Core\Inc\stm32f4xx_it.h_save
+2024-04-05 18:42:39,709 [INFO] CodeEngine:279 - Generated code: C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\Core\Inc\stm32f4xx_it.h
+2024-04-05 18:42:39,757 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\Core\Src\stm32f4xx_hal_msp.c_save
+2024-04-05 18:42:39,863 [INFO] CodeEngine:279 - Generated code: C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\Core\Src\stm32f4xx_hal_msp.c
+2024-04-05 18:42:39,873 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\MXTmpFiles\system.tmp_save
+2024-04-05 18:42:39,936 [INFO] CodeEngine:279 - Generated code: C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\MXTmpFiles\system.tmp
+2024-04-05 18:42:39,966 [INFO] CodeEngine:311 - oldGeneratedFile, C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\Core\Inc\stm32f4xx_hal_conf.h_save
+2024-04-05 18:42:40,049 [INFO] CodeEngine:335 - Generated code: C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\Core\Inc\stm32f4xx_hal_conf.h
+2024-04-05 18:42:40,102 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\Core\Inc\main.h_save
+2024-04-05 18:42:40,204 [INFO] CodeEngine:279 - Generated code: C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\Core\Inc\main.h
+2024-04-05 18:42:40,223 [INFO] CodeEngine:255 - oldGeneratedFile, C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\Core\Src\main.c_save
+2024-04-05 18:42:40,330 [INFO] CodeEngine:279 - Generated code: C:\Users\miles\STM32CubeIDE\workspace_1.15.0\ABS_Bicycle\Core\Src\main.c
+2024-04-05 18:42:40,793 [INFO] ProjectBuilder:3163 - Time for Copy HAL[1] : 201mS.
+2024-04-05 18:42:40,797 [INFO] ProjectBuilder:4736 - Project Generator version: 4.3.0-B58
+2024-04-05 18:42:40,872 [INFO] ConfigFileManager:1503 - The Die is : DIE423
+2024-04-05 18:42:42,028 [INFO] ProjectBuilder:5002 - Time for Generating toolchain IDE Files: 1231mS.
+2024-04-05 18:42:42,029 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 1mS.
+2024-04-05 18:42:42,033 [INFO] ProjectBuilder:3034 - Time for Copy CMSIS : 0mS.
