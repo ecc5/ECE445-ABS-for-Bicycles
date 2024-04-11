@@ -12,7 +12,7 @@
 
 g = 32.18;
 v0 = 88;
-r = 0.30;  % Wheel radius
+r = 0.90;  % Wheel radius
 Kf = 1;
 m = 50;
 PBmax = 1500;
