@@ -86,7 +86,7 @@ float IIR(float input, float old) {
 //Timing Function
 void delta(float* delta_t, float* t) {
 	float temp_t = HAL_GetTick();
-	*delta_t = temp_t - *t;
+	*delta_t = temp_t - t;
 	*t = temp_t;
 }
 
