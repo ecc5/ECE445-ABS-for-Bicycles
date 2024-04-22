@@ -1,0 +1,8 @@
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
+LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
+configDescList=org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:interupt Debug,org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ABS_Bicycle Debug
+eclipse.preferences.version=1
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ABS_Bicycle\ Debug/activeLaunchMode=debug
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:ABS_Bicycle\ Debug/activeLaunchTarget=null\:---
+org.eclipse.cdt.dsf.gdb.gdbRemotedescriptorType\:interupt\ Debug/activeLaunchMode=run

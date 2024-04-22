@@ -1,0 +1,813 @@
+!SESSION 2024-04-03 15:05:55.657 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-04-03 15:06:27.094
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-04-03 15:06:27.102
+!MESSAGE Log4j2 initialized with config file C:\Users\miles\STM32CubeIDE\workspace_1.15.0\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-04-03 15:06:32.920
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-03 16:10:09.542
+!MESSAGE Indexed 'new' (19 sources, 81 headers) in 7.52 sec: 4,268 declarations; 17,883 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-03 16:10:46.253
+!MESSAGE Indexed 'ABS_Bicycle' (0 sources, 0 headers) in 0 sec: 0 declarations; 0 references; 0 unresolved inclusions; 0 syntax errors; 0 unresolved names (0%)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-03 16:11:41.658
+!MESSAGE Indexed 'ABS_Bicycle' (19 sources, 81 headers) in 4.81 sec: 4,268 declarations; 17,883 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.009%)
+!SESSION 2024-04-18 18:19:38.850 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0
+
+!ENTRY org.eclipse.core.resources 2 10035 2024-04-18 18:19:40.007
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.core.resources 4 567 2024-04-18 18:19:40.052
+!MESSAGE Workspace restored, but some problems occurred.
+!SUBENTRY 1 org.eclipse.core.resources 4 567 2024-04-18 18:19:40.052
+!MESSAGE Could not read metadata for 'ABS_Bicycle'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/ABS_Bicycle)[567]: java.lang.Exception: The project description file (.project) for 'ABS_Bicycle' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:955)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:954)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:934)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:790)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1616)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2620)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2324)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:571)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:258)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:185)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:545)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+!SUBENTRY 2 org.eclipse.core.resources 4 567 2024-04-18 18:19:40.055
+!MESSAGE The project description file (.project) for 'ABS_Bicycle' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'ABS_Bicycle' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:955)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:954)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:934)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:790)
+	at org.eclipse.core.internal.resources.SaveManager.startup(SaveManager.java:1616)
+	at org.eclipse.core.internal.resources.Workspace.startup(Workspace.java:2620)
+	at org.eclipse.core.internal.resources.Workspace.open(Workspace.java:2324)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:571)
+	at org.eclipse.core.resources.ResourcesPlugin$WorkspaceInitCustomizer.addingService(ResourcesPlugin.java:1)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:947)
+	at org.osgi.util.tracker.ServiceTracker$Tracked.customizerAdding(ServiceTracker.java:1)
+	at org.osgi.util.tracker.AbstractTracked.trackAdding(AbstractTracked.java:258)
+	at org.osgi.util.tracker.AbstractTracked.trackInitial(AbstractTracked.java:185)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:324)
+	at org.osgi.util.tracker.ServiceTracker.open(ServiceTracker.java:267)
+	at org.eclipse.core.resources.ResourcesPlugin.start(ResourcesPlugin.java:545)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:818)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$2.run(BundleContextImpl.java:1)
+	at java.base/java.security.AccessController.doPrivileged(AccessController.java:569)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:810)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:767)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:1032)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:371)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:605)
+	at org.eclipse.osgi.container.Module.start(Module.java:468)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:513)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:117)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:570)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:335)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:397)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:41)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:496)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:416)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:168)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:525)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:153)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-04-18 18:19:43.196
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-04-18 18:19:43.196
+!MESSAGE Log4j2 initialized with config file E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-04-18 18:19:46.403
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 567 2024-04-18 18:19:49.970
+!MESSAGE The project description file (.project) for 'ABS_Bicycle' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'ABS_Bicycle' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:955)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:954)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:829)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1100)
+	at org.eclipse.ui.actions.OpenResourceAction$1.doOpenWithReferences(OpenResourceAction.java:233)
+	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-04-18 18:27:09.049 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-04-18 18:27:13.193
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-04-18 18:27:13.193
+!MESSAGE Log4j2 initialized with config file E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-04-18 18:27:16.406
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY org.eclipse.core.resources 4 567 2024-04-18 18:27:17.833
+!MESSAGE The project description file (.project) for 'ABS_Bicycle' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+!STACK 0
+java.lang.Exception: The project description file (.project) for 'ABS_Bicycle' is missing.  This file contains important information about the project.  The project will not function properly until this file is restored.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:955)
+	at org.eclipse.core.internal.resources.SaveManager.restoreMetaInfo(SaveManager.java:954)
+	at org.eclipse.core.internal.resources.SaveManager.restore(SaveManager.java:829)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1100)
+	at org.eclipse.ui.actions.OpenResourceAction$1.doOpenWithReferences(OpenResourceAction.java:233)
+	at org.eclipse.ui.actions.OpenResourceAction$1.runInWorkspace(OpenResourceAction.java:279)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:43)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.core.resources 4 368 2024-04-18 18:28:55.559
+!MESSAGE Resource '/ABS_Bicycle' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/ABS_Bicycle' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:367)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1060)
+	at org.eclipse.core.internal.resources.Project.open(Project.java:1183)
+	at com.st.stm32cube.ide.mcu.ide.ui.project.internal.MCUProjectImporter$ProjectOperation.execute(MCUProjectImporter.java:189)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.lambda$0(WorkspaceModifyOperation.java:110)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2453)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2478)
+	at org.eclipse.ui.actions.WorkspaceModifyOperation.run(WorkspaceModifyOperation.java:131)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:122)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-18 18:28:59.095
+!MESSAGE Indexed 'ABS_Bicycle' (21 sources, 124 headers) in 2.87 sec: 11,303 declarations; 35,253 references; 5 unresolved inclusions; 874 syntax errors; 1,044 unresolved names (2.2%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-04-18 21:37:51.317
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\ABS_Bicycle\Debug\ABS_Bicycle.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-04-18 21:37:51.317
+!MESSAGE E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\ABS_Bicycle\Debug\ABS_Bicycle.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\ABS_Bicycle\Debug\ABS_Bicycle.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-18 23:18:21.418
+!MESSAGE Indexed 'interupt' (22 sources, 82 headers) in 1.22 sec: 4,755 declarations; 22,614 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0073%)
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-04-18 23:50:04.536
+!MESSAGE ST-LINK GDB server failed to start (exit code = 0)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-04-18 23:50:04.554
+!MESSAGE Error in final launch sequence:
+
+Failed to start GDB server
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to start GDB server
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Error in initializing ST-LINK device.
+Reason: (0) Unknown. Please check power and cabling to target.
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.verifyServer(StLinkDebugHardware.java:1815)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:199)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:93)
+	at com.st.stm32cube.ide.mcu.debug.launch.LaunchSequenceUtil.stepStartGDBServer(LaunchSequenceUtil.java:206)
+	at com.st.stm32cube.ide.mcu.debug.launch.GDBExtendedJtagDSFFinalLaunchSequence_7_12.stepStartGDBServer(GDBExtendedJtagDSFFinalLaunchSequence_7_12.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.cdt.dsf.concurrent.ReflectionSequence$ReflectionStep.execute(ReflectionSequence.java:160)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:437)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:391)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2024-04-18 23:50:04.555
+!MESSAGE Failed to start GDB server
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error in initializing ST-LINK device.
+Reason: (0) Unknown. Please check power and cabling to target.
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.verifyServer(StLinkDebugHardware.java:1815)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:199)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:93)
+	at com.st.stm32cube.ide.mcu.debug.launch.LaunchSequenceUtil.stepStartGDBServer(LaunchSequenceUtil.java:206)
+	at com.st.stm32cube.ide.mcu.debug.launch.GDBExtendedJtagDSFFinalLaunchSequence_7_12.stepStartGDBServer(GDBExtendedJtagDSFFinalLaunchSequence_7_12.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.cdt.dsf.concurrent.ReflectionSequence$ReflectionStep.execute(ReflectionSequence.java:160)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:437)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:391)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 2 com.st.stm32cube.ide.mcu.toolchain 4 0 2024-04-18 23:50:04.555
+!MESSAGE Error in initializing ST-LINK device.
+Reason: (0) Unknown. Please check power and cabling to target.
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-04-19 00:04:15.934
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\interupt\Debug\interupt.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-04-19 00:04:15.934
+!MESSAGE E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\interupt\Debug\interupt.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\interupt\Debug\interupt.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 104 2024-04-19 00:04:24.672
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\interupt\Debug\interupt.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.cdt.dsf.gdb 4 104 2024-04-19 00:04:24.674
+!MESSAGE E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\interupt\Debug\interupt.elf not found
+!STACK 0
+java.io.FileNotFoundException: E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\interupt\Debug\interupt.elf not found
+	at org.eclipse.cdt.dsf.gdb.launching.LaunchUtils.verifyProgramPath(LaunchUtils.java:130)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.checkBinaryDetails(GdbLaunchDelegate.java:330)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:152)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:334)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SESSION 2024-04-19 00:51:36.912 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-04-19 00:51:48.282
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-04-19 00:51:48.289
+!MESSAGE Log4j2 initialized with config file E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-04-19 00:51:53.692
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 00:58:16.506
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 4 2024-04-19 00:58:58.854
+!MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
+!STACK 0
+java.lang.NullPointerException: Cannot read the array length because "containers" is null
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:102)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:146)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.getSubstitutionsPaths(GdbSourceLookupDirector.java:72)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.getSubstitutionsPaths(GDBSourceLookup.java:124)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.sourceContainersChanged(GDBSourceLookup.java:139)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant.sourceContainersChangedOnDispatchThread(GdbSourceLookupParticipant.java:120)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant$1.run(GdbSourceLookupParticipant.java:85)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 01:00:22.991
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 01:01:44.424
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+!SESSION 2024-04-19 18:24:05.947 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-04-19 18:24:11.502
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-04-19 18:24:11.502
+!MESSAGE Log4j2 initialized with config file E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-04-19 18:24:20.114
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 18:24:36.866
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 18:26:31.873
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+!SESSION 2024-04-19 19:57:44.696 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -data E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-04-19 19:57:50.179
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-04-19 19:57:50.195
+!MESSAGE Log4j2 initialized with config file E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-04-19 19:57:56.175
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:00:27.264
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:00:51.917
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:02:23.987
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:03:18.311
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY org.eclipse.cdt.core 1 0 2024-04-19 20:08:11.089
+!MESSAGE Indexed 'print' (22 sources, 82 headers) in 2.32 sec: 4,755 declarations; 22,614 references; 0 unresolved inclusions; 1 syntax errors; 2 unresolved names (0.0073%)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 4 2024-04-19 20:12:40.614
+!MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
+!STACK 0
+java.lang.NullPointerException: Cannot read the array length because "containers" is null
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:102)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:146)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.getSubstitutionsPaths(GdbSourceLookupDirector.java:72)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.getSubstitutionsPaths(GDBSourceLookup.java:124)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.sourceContainersChanged(GDBSourceLookup.java:139)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant.sourceContainersChangedOnDispatchThread(GdbSourceLookupParticipant.java:120)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant$1.run(GdbSourceLookupParticipant.java:85)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:12:48.372
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:13:21.114
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 4 2024-04-19 20:13:37.252
+!MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
+!STACK 0
+java.lang.NullPointerException: Cannot read the array length because "containers" is null
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:102)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:146)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.getSubstitutionsPaths(GdbSourceLookupDirector.java:72)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.getSubstitutionsPaths(GDBSourceLookup.java:124)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.sourceContainersChanged(GDBSourceLookup.java:139)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant.sourceContainersChangedOnDispatchThread(GdbSourceLookupParticipant.java:120)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant$1.run(GdbSourceLookupParticipant.java:85)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 4 2024-04-19 20:13:56.999
+!MESSAGE NullPointerException while trying to calculated source lookup path. This can be ignored if it occurs while terminating a debug session. See Bug 500988.
+!STACK 0
+java.lang.NullPointerException: Cannot read the array length because "containers" is null
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:102)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.collectSubstitutionsPaths(GdbSourceLookupDirector.java:146)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupDirector.getSubstitutionsPaths(GdbSourceLookupDirector.java:72)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.getSubstitutionsPaths(GDBSourceLookup.java:124)
+	at org.eclipse.cdt.dsf.gdb.service.GDBSourceLookup.sourceContainersChanged(GDBSourceLookup.java:139)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant.sourceContainersChangedOnDispatchThread(GdbSourceLookupParticipant.java:120)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbSourceLookupParticipant$1.run(GdbSourceLookupParticipant.java:85)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:14:42.336
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:17:16.413
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:18:55.651
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:27:02.839
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:37:17.235
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:39:11.458
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:39:41.978
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:52:47.533
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:57:30.599
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 20:58:39.525
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:02:18.020
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:11:52.399
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:16:01.235
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:19:32.693
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-04-19 21:19:33.520
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 21 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-04-19 21:19:33.521
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-04-19 21:19:33.522
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 21 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-04-19 21:19:33.523
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:22:40.633
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:23:24.373
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:25:57.275
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:28:29.051
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:31:14.323
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-04-19 21:31:15.212
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 26 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-04-19 21:31:15.213
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-04-19 21:31:15.214
+!MESSAGE Error - No active DSF-Session. tmpSessionId = 26 (contextManager row 121)
+
+!ENTRY com.st.stm32cube.ide.mcu.debug 4 0 2024-04-19 21:31:15.215
+!MESSAGE Existing sessions are:
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:31:42.408
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:34:20.319
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:37:55.981
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:44:04.303
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:48:28.529
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 21:52:12.743
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:02:30.041
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:03:48.989
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:09:17.836
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:15:59.790
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:19:12.052
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:21:20.207
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:22:28.819
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:23:59.003
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:25:21.960
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:28:12.665
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:29:13.418
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:51:00.321
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:53:17.567
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:55:46.893
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:56:25.866
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 22:59:27.326
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 23:02:13.857
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 23:03:48.496
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 23:04:43.893
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.toolchain 4 4 2024-04-19 23:34:31.628
+!MESSAGE ST-LINK GDB server failed to start (exit code = 5)
+
+!ENTRY org.eclipse.cdt.dsf.gdb 4 5012 2024-04-19 23:34:31.658
+!MESSAGE Error in final launch sequence:
+
+Failed to start GDB server
+!STACK 1
+org.eclipse.core.runtime.CoreException: Failed to start GDB server
+	at org.eclipse.cdt.dsf.concurrent.Query.get(Query.java:112)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugSession(GdbLaunchDelegate.java:252)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launchDebugger(GdbLaunchDelegate.java:109)
+	at org.eclipse.cdt.dsf.gdb.launching.GdbLaunchDelegate.launch(GdbLaunchDelegate.java:97)
+	at com.st.stm32cube.ide.mcu.debug.launch.DSFDelegate.launch(DSFDelegate.java:336)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1040)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1243)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: org.eclipse.core.runtime.CoreException: Error in initializing ST-LINK device.
+Reason: (5) Unknown MCU found on target.
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.verifyServer(StLinkDebugHardware.java:1815)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:199)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:93)
+	at com.st.stm32cube.ide.mcu.debug.launch.LaunchSequenceUtil.stepStartGDBServer(LaunchSequenceUtil.java:206)
+	at com.st.stm32cube.ide.mcu.debug.launch.GDBExtendedJtagDSFFinalLaunchSequence_7_12.stepStartGDBServer(GDBExtendedJtagDSFFinalLaunchSequence_7_12.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.cdt.dsf.concurrent.ReflectionSequence$ReflectionStep.execute(ReflectionSequence.java:160)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:437)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:391)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 1 com.st.stm32cube.ide.mcu.debug.launch 4 0 2024-04-19 23:34:31.659
+!MESSAGE Failed to start GDB server
+!STACK 1
+org.eclipse.core.runtime.CoreException: Error in initializing ST-LINK device.
+Reason: (5) Unknown MCU found on target.
+	at com.st.stm32cube.ide.mcu.debug.stlink.StLinkDebugHardware.verifyServer(StLinkDebugHardware.java:1815)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:199)
+	at com.st.stm32cube.ide.mcu.debug.launch.export.HardwareDebugUtil.startServer(HardwareDebugUtil.java:93)
+	at com.st.stm32cube.ide.mcu.debug.launch.LaunchSequenceUtil.stepStartGDBServer(LaunchSequenceUtil.java:206)
+	at com.st.stm32cube.ide.mcu.debug.launch.GDBExtendedJtagDSFFinalLaunchSequence_7_12.stepStartGDBServer(GDBExtendedJtagDSFFinalLaunchSequence_7_12.java:104)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.cdt.dsf.concurrent.ReflectionSequence$ReflectionStep.execute(ReflectionSequence.java:160)
+	at org.eclipse.cdt.dsf.concurrent.Sequence.executeStep(Sequence.java:475)
+	at org.eclipse.cdt.dsf.concurrent.Sequence$2.handleSuccess(Sequence.java:437)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor.handleCompleted(RequestMonitor.java:391)
+	at org.eclipse.cdt.dsf.concurrent.RequestMonitor$2.run(RequestMonitor.java:317)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+!SUBENTRY 2 com.st.stm32cube.ide.mcu.toolchain 4 0 2024-04-19 23:34:31.659
+!MESSAGE Error in initializing ST-LINK device.
+Reason: (5) Unknown MCU found on target.
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 23:34:54.897
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 23:38:15.984
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 23:42:35.307
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 23:43:42.369
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 23:45:15.542
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-19 23:51:59.784
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+!SESSION 2024-04-21 21:28:14.573 -----------------------------------------------
+eclipse.buildId=Version 1.15.0
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 4 4 2024-04-21 21:28:37.465
+!MESSAGE CubeMX plugin appears to be active, Log4j initialization might be too late.
+
+!ENTRY com.st.stm32cube.ide.mcu.informationcenter 1 1 2024-04-21 21:28:37.473
+!MESSAGE Log4j2 initialized with config file E:\Senior Design\ECE445-ABS-for-Bicycles-main\workspace_1.15.0\.metadata\.log4j2.xml
+
+!ENTRY com.st.stm32cube.ide.mcu.ide 1 1 2024-04-21 21:28:46.092
+!MESSAGE Started RMI Server, listening on port 41337
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-21 21:30:31.590
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-21 21:33:39.006
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-21 21:49:53.208
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-21 21:52:44.883
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-21 21:59:17.829
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42
+
+!ENTRY com.st.stm32cube.ide.mcu.debug.swv 1 1 2024-04-21 22:00:46.674
+!MESSAGE SWV configuration; base: 36000000; minDiv: 18; maxDiv: 65535; maxSWO: 2000000; limit: 2000000 => SWO: 2000000; CPU: 84000000; div: 42

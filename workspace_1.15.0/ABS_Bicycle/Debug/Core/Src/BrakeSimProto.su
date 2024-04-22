@@ -1,0 +1,4 @@
+../Core/Src/BrakeSimProto.c:61:13:rt_ertODEUpdateContinuousStates	112	static
+../Core/Src/BrakeSimProto.c:128:6:BrakeSimProto_step	24	static
+../Core/Src/BrakeSimProto.c:206:6:BrakeSimProto_derivatives	24	static
+../Core/Src/BrakeSimProto.c:235:6:BrakeSimProto_initialize	4	static
