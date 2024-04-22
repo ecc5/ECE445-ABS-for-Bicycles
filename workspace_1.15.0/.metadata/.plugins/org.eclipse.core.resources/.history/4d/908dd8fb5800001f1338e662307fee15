@@ -127,8 +127,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 		float tmp = HAL_GetTick();
 		delta_t1 = tmp - t1;
 		t1 = tmp;
-//		wheel_speed = 30/delta_t1;
-		wheel_speed = IIR(rad/delta_t1,wheel_speed);
+		wheel_speed = 30/delta_t1;
 		count2++;
 	}
 
@@ -140,8 +139,7 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 		float tmp1 = HAL_GetTick();
 		delta_t2 = tmp1 - t2;
 		t2 = tmp1;
-//		vehicle_speed = 30/delta_t2;
-		vehicle_speed = IIR(rad/delta_t2,vehicle_speed);
+		vehicle_speed = 30/delta_t2;
 		count3++ ;
 	}
 //	HAL_Delay(10);
