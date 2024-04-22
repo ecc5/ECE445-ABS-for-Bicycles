@@ -69,8 +69,11 @@ float rad = 0.2618; //(Guess) This will, of course, need to get set later once m
 
 float IIR_alpha = 0.5; //Get rid of the reentrant IIR if you need more tuning
 
+//PWM variables
+float edge = 0; //this is the old value of controller_out
+
 //Controller variables
-float slp_rto = 0.2; //Shouldn't be used just yet, but will for differential braking
+float slp_rto = 0.2; //Shouldn't be changed just yet, but will for differential braking
 int controller_out = 0; //collection variable for the simulink model output
 
 float tol = 2500.0;
@@ -120,13 +123,13 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 
 
 	if (GPIO_Pin == GPIO_PIN_4){
-//		delta(&delta_t1,&t1);
+		delta(&delta_t1,&t1);
 //		wheel_speed = IIR(rad/delta_t1,wheel_speed);
 //		wheel_speed = 30/delta_t1;
 
-		float tmp = HAL_GetTick();
-		delta_t1 = tmp - t1;
-		t1 = tmp;
+		// float tmp = HAL_GetTick();
+		// delta_t1 = tmp - t1;
+		// t1 = tmp;
 //		wheel_speed = 30/delta_t1;
 		wheel_speed = IIR(rad/delta_t1,wheel_speed);
 		count2++;
@@ -134,18 +137,26 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 
 
 	if (GPIO_Pin == GPIO_PIN_3){
-//		delta(&delta_t2,&t2);
+		delta(&delta_t2,&t2);
 //		vehicle_speed = IIR(rad/delta_t2,vehicle_speed);
 //		vehicle_speed = 30/delta_t2;
-		float tmp1 = HAL_GetTick();
-		delta_t2 = tmp1 - t2;
-		t2 = tmp1;
+		// float tmp1 = HAL_GetTick();
+		// delta_t2 = tmp1 - t2;
+		// t2 = tmp1;
 //		vehicle_speed = 30/delta_t2;
 		vehicle_speed = IIR(rad/delta_t2,vehicle_speed);
 		count3++ ;
 	}
 //	HAL_Delay(10);
 //	HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+}
+
+//This function should be called every time controller_out changes
+//This function should write to the proper GPIO pins for the right duration
+//Input: Step Direction (1 for actuating brakes on | -1 for actuating brakes off)
+//Output: Finite length PWM with the appropriate length to actuate brakes on or off
+void PWM(int dir) {
+  //write a function here that can generate the PWM (might have to read motor driver documentation)
 }
 
 //This function should get called when delta_t becomes very large (give it a tolerance)
@@ -229,7 +240,7 @@ int main(void)
 
 	  rtU._v = vehicle_speed;
 	  rtU._w = wheel_speed;
-	  rtU.DesiredRelativeSlip = 0.2;
+	  rtU.DesiredRelativeSlip = slp_rto; //This may change depending on if we use a pot or not to input the slip ratio
 	  BrakeSimProto_step();
 //	  HAL_Delay(1000);
 	  controller_out = rtY.MotorInput;
@@ -271,14 +282,19 @@ int main(void)
 //	  	  		  HAL_Delay(200);
 //	  	  	  }
 
+//// !!! To-Do (Leon) !!!
+// if (controller_out != edge) {
+//   PWM(controller_out); //To-Do
+//   edge = controller_out;
+// }
 
-	  if (controller_out == 1){
-	  		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
-	  }
-	  else{
-	  		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-//	  		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
-	  }
+// 	  if (controller_out == 1){
+// 	  		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_SET);
+// 	  }
+// 	  else{
+// 	  		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+// //	  		  HAL_GPIO_WritePin(GPIOA, GPIO_PIN_5, GPIO_PIN_RESET);
+// 	  }
 
 
 //	  count++;
