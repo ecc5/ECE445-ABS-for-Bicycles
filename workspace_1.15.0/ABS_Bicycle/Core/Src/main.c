@@ -157,6 +157,10 @@ void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin) {
 //Output: Finite length PWM with the appropriate length to actuate brakes on or off
 void PWM(int dir) {
   //write a function here that can generate the PWM (might have to read motor driver documentation)
+  //ENABLE Output
+  //dmode Output
+  //dir Output
+  //PWM Output
 }
 
 //This function should get called when delta_t becomes very large (give it a tolerance)
